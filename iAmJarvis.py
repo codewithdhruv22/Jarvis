@@ -4,7 +4,7 @@ import time
 import random
 from win32com.client import Dispatch
 import urllib #2
-
+import speech_recognition as sr # Voice_listner
 import os #4
 
 #Text To Speech Engine
@@ -37,7 +37,7 @@ def checkInternet(host='http://google.com'):
     except:
         return False
 
-# Listner
+# Voice listner
 def listen():
     r = sr.Recognizer()
     r.energy_threshold = 5000.00
@@ -58,7 +58,6 @@ def sleepCom():
     speak("Ok sir! I going to sleep")
     os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
 
-#18 Jarvis Self Introduction
 def JarvisIntro():
     speak('Sir I am your Just a rather very intelligent system....You can call me JARVIS')
     speak("Do you Want More Information About Me")
@@ -85,3 +84,4 @@ def JarvisIntro():
         speak("Ok sir.")
 
 
+JarvisIntro()
