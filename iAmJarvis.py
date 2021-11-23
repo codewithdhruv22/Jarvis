@@ -84,9 +84,7 @@ def JarvisIntro():
         speak("Ok sir.")
 
 
-<<<<<<< HEAD
-JarvisIntro()
-=======
+
 #15 Tells News
 def news_of_india():
     """This Function Fetch Top Live News headlines from Google News"""
@@ -120,4 +118,4 @@ def news_of_india():
 
 
 listen()
->>>>>>> 2342e87afd36748b22b237bce9916bf545dbb059
+
