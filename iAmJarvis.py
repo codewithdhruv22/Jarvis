@@ -4,7 +4,7 @@ import time
 import random
 from win32com.client import Dispatch
 import urllib #2
-
+import requests #15
 import os #4
 
 #Text To Speech Engine
@@ -85,3 +85,36 @@ def JarvisIntro():
         speak("Ok sir.")
 
 
+#15 Tells News
+def news_of_india():
+    """This Function Fetch Top Live News headlines from Google News"""
+    try:
+        # Google news api
+        main_url = "http://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=2fe749e4f1b542fbb92b085933804760"
+
+        # fetching data in json format
+        open_google_page = requests.get(main_url).json()
+
+        # getting all articles in a string article
+        article = open_google_page["articles"]
+
+        # empty list which will
+        # contain all trending news
+        results = []
+
+        for ar in article:
+            results.append(ar["title"])
+        speak("Ok sir, Getting News from Web..Please Wait")
+        speak("Sir I got the News.. Here is the top headlines...")
+        for i in range(len(results)):
+            # printing all trending news
+            Headline = i + 1, results[i]
+            print(Headline)
+            speak(Headline)
+    except Exception as ConnectionError:
+        speak("Sorry sir, i got some error on fetching news from web")
+        print(ConnectionError)
+
+
+
+listen()
