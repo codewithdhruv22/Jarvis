@@ -15,3 +15,4 @@
 15. Tells news
 16. Play music or any moive
 17. Tell time or weather
+18. Jarvis Self Introduction
