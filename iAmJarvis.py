@@ -4,6 +4,7 @@ import time
 import random
 from win32com.client import Dispatch
 import urllib #2
+import requests#15
 import speech_recognition as sr # Voice_listner
 import os #4
 
@@ -115,6 +116,6 @@ def news_of_india():
         speak("Sorry sir, i got some error on fetching news from web")
         print(ConnectionError)
 
-
+news_of_india()
 
 
