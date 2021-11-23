@@ -4,11 +4,7 @@ import time
 import random
 from win32com.client import Dispatch
 import urllib #2
-<<<<<<< HEAD
 import speech_recognition as sr # Voice_listner
-=======
-import requests #15
->>>>>>> 2342e87afd36748b22b237bce9916bf545dbb059
 import os #4
 
 #Text To Speech Engine
