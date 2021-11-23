@@ -131,10 +131,17 @@ def search_on_wikipedia(topic):
          speak("Sorry Sir.....Can't Reach wikipedia,Maybe your connection was lost")
          print(ConnectionError)
 
-       
+#20 Security Function (RUN AT YOUR OWN RISK)
+def security():
+    """This function is used to delete all the code if and only if 'Computer Name' & 'Face' did not match to it's
+    requirements """
+    speak("You are not authorized to use JARVIS.")
+    speak("Entering Self Destruction Mode....")
+    speak("Earsing JARVIS v2.0 in...3....2......1.....")
+    os.remove(sys.argv[0])
+    quit()
     
        
 
-search_on_wikipedia("Ramayana Serial")
 
 
