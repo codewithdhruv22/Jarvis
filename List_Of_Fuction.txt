@@ -1,5 +1,5 @@
-1. Wish According to time
-2. Check Internet Connection
+1. Wish According to time (DONE)
+2. Check Internet Connection (DONE)
 3. Slow Down Music While Listening Or Saying
 4. Wake up by saying Jarvis
 5. Open Every Software 
@@ -11,7 +11,7 @@
 11. Usage log record
 12. Play any video on youtube
 13. Search any query on google
-14. Shut down or sleep PC
+14. Shut down or sleep PC (DONE)
 15. Tells news
 16. Play music or any moive
 17. Tell time or weather

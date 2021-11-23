@@ -3,7 +3,9 @@
 import time
 import random
 from win32com.client import Dispatch
+import urllib #2
 
+import os #4
 
 #Text To Speech Engine
 def speak(text):
@@ -27,3 +29,59 @@ def wishMe():
     elif time_hr > 16 and time_hr < 19:
         speak(random.choice(eve))
 
+# 2. Check Internet Connection
+def checkInternet(host='http://google.com'):
+    try:
+        urllib.request.urlopen(host)
+        return True
+    except:
+        return False
+
+# Listner
+def listen():
+    r = sr.Recognizer()
+    r.energy_threshold = 5000.00
+    with sr.Microphone() as mp:
+        audio = r.listen(mp)
+        try:
+            voice_data = r.recognize_google(audio)
+        except:
+            voice_data = ""
+    return voice_data
+
+#14 Shut Down Computer
+def shutdownCom():
+    speak("Ok sir! Computer is shutting Down Now!")
+    os.system("shutdown /s /t 1")
+
+def sleepCom():
+    speak("Ok sir! I going to sleep")
+    os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
+
+def JarvisIntro():
+    speak('Sir I am your Just a rather very intelligent system....You can call me JARVIS')
+    speak("Do you Want More Information About Me")
+    query3 = input("Yes/No:\n")
+    query3 = query3.lower()
+    if query3 == 'yes':
+        print("Here is my full detail")
+        speak("Here is my full detail")
+        print("I am Jarvis version 2 point 0 . I am created by Dhruv Sir")
+        print("I am Jarvis version 2 point 0 . I am created by Dhruv Sir")
+        speak("I am written in python")
+        print("I am written in python")
+        speak("My BirthDate is 1 May 2020")
+        print("My BirthDate is 1 May 2020")
+        speak("I am Written in Python in 300+ lines of Code")
+        print("I am Written in Python in 300+ lines of Code")
+        speak("I am currently in version 1 point 0 ")
+        print("I am currently in version 21 point 0 ")
+        speak("That's all ")
+        print("That's all ")
+        speak("And a last thing i am your Friend")
+        print("And a last thing i am your Freind")
+    else:
+        speak("Ok sir.")
+
+
+JarvisIntro()
