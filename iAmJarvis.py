@@ -7,6 +7,7 @@ import urllib #2
 import requests#15
 import speech_recognition as sr # Voice_listner
 import os #4
+import wikipedia#19
 
 #Text To Speech Engine
 def speak(text):
@@ -116,6 +117,24 @@ def news_of_india():
         speak("Sorry sir, i got some error on fetching news from web")
         print(ConnectionError)
 
-news_of_india()
+#19 Wikipedia Info Fetcher
+def search_on_wikipedia(topic):
+    """This function is fecthing data from wikipedia on any topic. ex:- Ramamyan on wikipedia"""
+    
+    try:
+        speak(f'Searcing {topic} in wikipedia...')
+        results = wikipedia.summary(topic, sentences=2)
+        speak("Sir...According To wikipedia")
+        print(results)
+        speak(results)
+    except Exception as ConnectionError:
+         speak("Sorry Sir.....Can't Reach wikipedia,Maybe your connection was lost")
+         print(ConnectionError)
+
+       
+    
+       
+
+search_on_wikipedia("Ramayana Serial")
 
 
