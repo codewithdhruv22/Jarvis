@@ -10,7 +10,7 @@
 10. Translate language feature
 11. Usage log record
 12. Play any video on youtube
-13. Search any query on google (DONE)
+13. Search any query on google
 14. Shut down or sleep PC (DONE)
 15. Tells news (DONE)
 16. Play music or any moive
