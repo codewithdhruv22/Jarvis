@@ -8,6 +8,11 @@ import requests#15
 import speech_recognition as sr # Voice_listner
 import os #4
 import wikipedia#19
+import webbrowser#13
+import google #13
+import datetime
+from googlesearch import search#13
+
 
 #Text To Speech Engine
 def speak(text):
@@ -141,7 +146,9 @@ def security():
     os.remove(sys.argv[0])
     quit()
     
-       
 
-
-
+#13
+def TellTime():
+    strTime = datetime.datetime.now().strftime("%H:%M %p")
+    print(f"Sir,The time is {strTime}")
+    speak(f"Sir,The time is {strTime}")

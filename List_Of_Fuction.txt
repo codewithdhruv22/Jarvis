@@ -10,11 +10,12 @@
 10. Translate language feature
 11. Usage log record
 12. Play any video on youtube
-13. Search any query on google
+13. Search any query on google (DONE)
 14. Shut down or sleep PC (DONE)
 15. Tells news (DONE)
 16. Play music or any moive
-17. Tell time or weather
+17. Tell time 
 18. Jarvis Self Introduction(DONE)
 19. Fetch Info From Wikipedia(DONE)
 20. Adding A Security Feature(DONE)
+21 Tell Weather
