@@ -118,5 +118,4 @@ def news_of_india():
 
 
 
-news_of_india()
 
