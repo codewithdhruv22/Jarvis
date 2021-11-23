@@ -15,7 +15,7 @@ def speak(text):
 
 # 1. Wish According to time
 def wishMe():
-    mor = ["Good Morning Sir", "A very good morning  sir", "Morning Sir, Have A good day.", "Ready to rock for the new day sir", "Hi Sir, Good Morning"]
+    mor = ["Good Morning Sir , Let's Go To Work", "A very good morning  sir", "Morning Sir, Have A good day.", "Ready to rock for the new day sir", "Hi Sir, Good Morning"]
     aft = ["Good Afternoon Sir", "Good Afternoon Sir", "A very good afternoon sir from your JARVIS", "A very good afternoon sir from jarvis"]
     eve = ["Good evening sir", "Good evening sir", "A very good evening sir", "Hello sir, Good evening"]
 
