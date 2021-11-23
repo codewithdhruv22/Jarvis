@@ -12,7 +12,7 @@
 12. Play any video on youtube
 13. Search any query on google
 14. Shut down or sleep PC (DONE)
-15. Tells news
+15. Tells news (DONE)
 16. Play music or any moive
 17. Tell time or weather
 18. Jarvis Self Introduction
